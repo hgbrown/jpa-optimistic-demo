@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=db-jpa-optimistic-demo'
+      - 'POSTGRES_PASSWORD=dbuser'
+      - 'POSTGRES_USER=s3ckr!t'
+    ports:
+      - '15442:5432'
